@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de" ng-app="lovelocks">
+<head>
+  <meta charset="UTF-8">
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="app.js"></script>
+
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    #bridge {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body ng-controller="LoveLockController">
+
+<h1 class="text-center">Virtuelle Liebesschlösser</h1>
+<img style="position: absolute;"
+     src="images/lock.png"
+     ng-repeat="lock in locks"
+     ng-style="{left: lock.x+'px', top: lock.y+'px'}"
+     alt="{{lock.title}}"
+     title="{{lock.title}}">
+
+<img id="bridge" src="images/brueckengelaender.jpg" ng-click="addLock( $event )">
+
+</body>
+
+</html>

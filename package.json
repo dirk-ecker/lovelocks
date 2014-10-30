@@ -1,0 +1,20 @@
+{
+  "name": "lovelocks",
+  "description": "",
+  "version": "0.0.1",
+
+  "scripts": {
+  },
+
+  "dependencies": {
+    "angular": "1.3.*",
+    "angular-bootstrap": "0.11.*",
+    "bootstrap": "3.2.*",
+
+    "karma": "0.12.*",
+    "jasmine": "2.0.*",
+    "karma-chrome-launcher": "0.1.*",
+    "protractor": "1.3.*"
+
+  }
+}
